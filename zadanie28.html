@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function okno_zamknij_Laskowska59()
+		{
+			window.close()
+		}
+	</script>
+<script type="text/javascript">
+function owoc(kolor_Lask,rodzaj_Lask,ksztalt_Lask)
+{
+this.kolor=kolor_Lask;
+this.rodzaj=rodzaj_Lask;
+this.ksztalt=ksztalt_Lask;
+}//koniec konstruktora
+
+owoc.prototype.wypisz = function ()
+{
+alert(this.kolor+ ' ' + this.rodzaj+ ' ' + this.ksztalt);
+};
+
+var owoc1 = new owoc("fioletowy", "borowka", "okragly"); 
+var owoc2 = new owoc('czerwone', 'jablko', 'okragle');
+
+owoc1.wypisz();
+owoc2.wypisz();
+
+document.write("dostęp do właściwości"+"<br>");
+
+document.write("owoc pierwszy"+" "+owoc1.kolor+" "+owoc1.rodzaj+" "+owoc1.ksztalt+"<br>"); 
+document.write("owoc drugi"+" "+owoc2.kolor+" "+owoc2.rodzaj+" "+owoc2.ksztalt);
+</script>
+	
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska59()"/>
+</body>
+</html>

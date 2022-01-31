@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_Laskowska58()
+{
+window.close()
+}
+</script>
+<script type="text/javascript">
+var owoc_wyswitel_laskowska = {
+kolor: 'fioletowy',
+kształt: 'okrągły',
+rodzaj: 'borówka',
+pokaz: function ()
+{
+document.write(this.kolor + ' ' + this.kształt + ' ' + this.rodzaj  )
+}
+}
+owoc_wyswitel_laskowska.pokaz();
+
+
+owoc_wyswitel_laskowska.smak=' słodki ';
+owoc_wyswitel_laskowska.wypisz=function() {alert('smak: ' + this.smak  )}
+owoc_wyswitel_laskowska.wypisz();
+
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska58()"/>
+</body>
+</html>

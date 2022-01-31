@@ -1,0 +1,37 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij_Lasowska17()
+{
+window.close()
+}
+</script>
+<div style="color:#000066;font-size:58px;">
+ <script language="JavaScript">
+var d1_las=prompt("Podaj A=","");
+var d2_las=prompt("Podaj B=","");
+ var a=parseFloat(d1_las);
+ var b=parseFloat(d2_las);
+var s;
+var c;
+var d;
+var e;
+var g;
+s=a*a*a;
+c= 3*(Math.pow(a, 2))*b;
+d=3*a*(Math.pow(b, 2));
+e=+Math.pow(b, 3);
+g=s+c+d+e;
+
+
+ </script>
+ <script language="JavaScript">
+document.write("A="+a+" B="+b+"" );
+</script><br>
+<script language="JavaScript">
+document.write("("+a+"+"+b+")^3="+a+"^3+3*(("+a+")^2)*("+b+")+3*("+a+")*(("+b+")^2)+"+b+"^3="+s+"+"+c+"+"+d+"+"+e+"="+g+"<br>");
+</script><br>
+</div><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Lasowska17()"/>
+</body>
+</html>

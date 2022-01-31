@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_Laskowska()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<b>Teoria:</b><br>
+<b>a)Uwagi na temat JS</b><br>
+-<b>kiedy powstała</b> - W 1995r.<br>
+-<b>dlaczego jest to język skryptowy</b> - JavaScript jest przede wszystkim językiem skryptowym – to znaczy interpretowanym. Nie musi
+zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. <br>
+-<b>gdzie jest wykonywany JS (kliet lub serwer)</b> - O olbrzymiej popularności języka zadecydowały z pewnością jego uniwersalność oraz fakt, iż pozwala
+on na odciążenie serwerów i ograniczenie ilości zbędnych danych przesyłanych pomiędzy nimi a
+przeglądarką klienta. Najprostszym przykładem tych zalet mogą być choćby sklepy internetowe,
+których nieodzownym elementem są formularze wypełniane przez użytkownika<br>
+-<b>dlaczego jest to bezpieczne narzędzie </b>- Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone
+uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a
+wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.<br>
+-<b>czy jest to język obiektowy , jeśli tak to dlaczego.</b> - Jest jezykiem obiektowym. Określa on sposoby dostępu oraz zmiany zawartości i parametrów poszczególnych elementów
+struktury strony. Dzięki niemu do dokumentów HTML mogą mieć dostęp wszystkie typy przeglądarek
+i języków programowania. <br>
+<b>b)</b><br>
+<b><textarea><input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"></textarea></b><br>
+Tworzy przycisk, który otwiera nowe okno przeglądarki lub nową kartę.<br><br>
+<b>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</b><br>
+Otwiera obraz, nie pokazuje paska narzędzi, ukrywa przyciski katalogów, ukrywa menu przeglądarki, wysokość 280px, szerokość 160px,położenie okna względem góry ekranu 200px, położenie okna względem lewej strony ekranu 200px. <br><br>
+<b>toolbar=no </b>- wartość yes lub no (1 lub 0): pokazuje lub ukrywa standardowy pasek narzędzi<br>
+<b>directories=no</b> - wartość yes lub no (1 lub 0): pokazuje lub ukrywa przyciski katalogów<br>
+<b>menubar=no</b> - wartość yes lub no (1 lub 0): pokazuje lub ukrywa menu przeglądarki<br>
+<b>height=280</b> - wartość w pixelach (1 lub 0): ustawia wysokość okna<br>
+<b>width=160</b> - wartość w pixelach (1 lub 0): ustawia szerokość okna<br>
+<b>top=200</b> - wartość w pixelach : ustawia położenie okna względem góry ekranu<br>
+<b>left=200 </b>- wartość w pixelach : ustawia położenie okna względem lewej strony ekranu<br><br>
+<b>window.close()</b><br>
+Służy do zamknięcia aktualnego okna.<br>
+<img src="img/obraz1.gif" />
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska()"/>
+</body>
+</html>

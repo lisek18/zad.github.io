@@ -1,0 +1,33 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij_Lasowska7()
+{
+window.close()
+}
+</script>
+<div style="color:green;font-size:61px;">
+ <script language="JavaScript">
+var d1_las=prompt("dzien koncowy=","");
+var d2_las=prompt("dzien poczatkowy=","");
+var g1_las=prompt("1 godzina=","");
+var g2_las=prompt("2 godzina=","");
+var suma;
+var sekundy;
+var razem;
+var r;
+ var a=parseFloat(d1_las);
+ var b=parseFloat(d2_las);
+ var c=parseFloat(g1_las);
+ var d=parseFloat(g2_las);
+ 
+ suma=a-b;
+ r=(d-c)*3600;
+ sekundy=suma*86400;
+ razem=sekundy-r;
+ document.write("minelo="+razem+"<br>");
+ </script>
+</div><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Lasowska7()"/>
+</body>
+</html>
